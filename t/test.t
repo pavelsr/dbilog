@@ -3,7 +3,7 @@ use warnings;
 use lib "lib";
 use Test::More;
 use DBI;
-use DBI::Log file => "foo.sql";
+use DBI::Log::Plugged file => "foo.sql";
 
 END {
     unlink "foo.db";

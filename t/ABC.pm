@@ -1,7 +1,7 @@
 package ABC;
 
 use DBI;
-use DBI::Log file => "foo.sql";
+use DBI::Log::Plugged file => "foo.sql";
 
 my $dbh = DBI->connect("dbi:SQLite:dbname=foo.db", "", "", {RaiseError => 1, PrintError => 0});
 my $sth = $dbh->prepare("CREATE TABLE foo (a INT, b INT)");
